@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { priceString } from 'utils/priceString';
+
 function FavouritePropertyItem({ property, onRemoveFromFavourites }) {
   const { price, address } = property;
 
   return (
     <div>
-      <div>{price}</div>
+      <div>{priceString(price)}</div>
       <div>{address}</div>
 
       <button
