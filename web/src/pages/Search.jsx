@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import PropertySearchForm from 'components/PropertySearchForm';
 import PropertiesList from 'components/PropertiesList';
 import PropertyItem from 'components/PropertyItem';
+import { AppContext } from 'context';
 
 function Search() {
   const [matchedProperties, setMatchedProperties] = useState([]);
@@ -24,26 +25,35 @@ function Search() {
   };
 
   return (
-    <div>
-      <PropertySearchForm onSearch={handleSearch} />
-      <PropertiesList
-        properties={matchedProperties}
-        renderItem={(property) => {
-          return (
-            <PropertyItem
-              key={property.id}
-              property={property}
-              onAddToFavourites={() => {
-                console.log(`add property ${property.address} to favourites`);
-              }}
-              onRemoveFromFavourites={() => {
-                console.log(`remove property ${property.address} from favourites`);
+    <AppContext.Consumer>
+      {({ favouriteProperties, addPropertyToFavourites, removePropertyFromFavourites }) => {
+        return (
+          <div>
+            <PropertySearchForm onSearch={handleSearch} />
+            <PropertiesList
+              properties={matchedProperties}
+              renderItem={(property) => {
+                const favoured = favouriteProperties.find((favouriteProperty) => favouriteProperty.id === property.id);
+
+                return (
+                  <PropertyItem
+                    key={property.id}
+                    property={property}
+                    favoured={favoured}
+                    onAddToFavourites={() => {
+                      addPropertyToFavourites(property);
+                    }}
+                    onRemoveFromFavourites={() => {
+                      removePropertyFromFavourites(property);
+                    }}
+                  />
+                );
               }}
             />
-          );
-        }}
-      />
-    </div>
+          </div>
+        );
+      }}
+    </AppContext.Consumer>
   );
 }
 

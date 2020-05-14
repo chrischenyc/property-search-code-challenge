@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function PropertyItem({ property, onAddToFavourites, onRemoveFromFavourites }) {
+function PropertyItem({ property, favoured, onAddToFavourites, onRemoveFromFavourites }) {
   const { price, address } = property;
-
-  // TODO: figure out if the property has been added to favourites or not
-  const favoured = false;
 
   return (
     <div>
@@ -34,8 +31,13 @@ function PropertyItem({ property, onAddToFavourites, onRemoveFromFavourites }) {
   );
 }
 
+PropertyItem.defaultProps = {
+  favoured: false,
+};
+
 PropertyItem.propTypes = {
   property: PropTypes.object.isRequired,
+  favoured: PropTypes.bool,
   onAddToFavourites: PropTypes.func.isRequired,
   onRemoveFromFavourites: PropTypes.func.isRequired,
 };
