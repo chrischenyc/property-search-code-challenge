@@ -5,37 +5,50 @@
 
 ## Tech-stack decisions
 
-- Javascript, React, Node.js, GraphQL based on current team skills. Typescript would play nicely when it comes to GraphQL schema generation, but that's another story.
+Javascript, React, Node.js, GraphQL based on current team skills.
+
+Typescript would play nicely when it comes to server-side GraphQL [types/resolvers/queries/mutations generation](https://typegraphql.com/), and even better with client-side [schema/hooks code generation](https://graphql-code-generator.com/), but that's another story.
 
 - React web app
 
-  - standard CRA project. Would be nice to use Next.js in production, but server-side-rendering are not current concerns.
+  - standard [CRA](https://reactjs.org/docs/create-a-new-react-app.html) project. It would be nice to use [Next.js](https://nextjs.org/) in production, however, server-side-rendering is not current concern, so meh.
   - Prefer functional component over class component.
-  - React Context will be used to manage state, with local storage as the client-side data persistence mechanism.
-  - React Hooks will be used to execute GraphQL queries.
-  - Practise container/smart component vs presentational/dumb component design pattern.
+  - Practise [smart component vs dumb component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) pattern to separate presentational concerns from business logic.
+  - React [Context](https://reactjs.org/docs/context.html) will be used to manage state, with local storage as the client-side data persistence mechanism.
+  - [Apollo React Hooks](https://www.apollographql.com/docs/react/api/react-hooks/https://www.apollographql.com/docs/react/api/react-hooks/) will be used to execute GraphQL queries.
   - Use cypress.io for e2e testing
 
 - Node.js back-end
 
-  - standard express.js project, with Apollo express server configuration.
-  - Would be nice to use type-graphql to define resolvers, queries, and mutations conveniently. Need to research the equivalent solution in plain Javascript.
-  - The search GraphQL query should be agnostic to the underlying data system (database, cache, external web service, mock JSON file), therefore, a layer of abstraction is necessary to modularise searching functions.
+  - standard express.js project, with [Apollo express server](https://github.com/apollographql/apollo-server/tree/master/packages/apollo-server-express) configuration.
+  - [role-base project structure](https://hackernoon.com/three-ways-to-structure-your-graphql-code-with-apollo-server-4788beed89db), I am also open to domain-based project structure.
+  - The search query is agnostic to the underlying data system (database, cache, external web service, mock JSON file), therefore, a layer of abstraction is necessary to modularise searching functions.
 
-## TODO
-
-- CRA
-- Node.js
-- finalise README.md
-
-## get started
+## get started with node.js server
 
 ```bash
-// TODO
+// start server on http://localhost:4000
+
+cd server
+yarn
+yarn dev
+
+// run unit tests
+yarn test
 ```
 
-## testing
+## get started with React web app
 
 ```bash
-// TODO
+// start server on http://localhost:3000
+
+cd web
+yarn
+yarn dev
+
+// run unit tests
+yarn test
+
+// run e2e tests
+yarn test:e2e
 ```
