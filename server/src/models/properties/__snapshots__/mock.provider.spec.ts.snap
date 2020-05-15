@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mockProvider.propertiesBySuburb should return some properties for keyword Carlton 1`] = `
+Array [
+  Object {
+    "address": "2403 Forster Circle, Carlton",
+    "id": "e4f7e9ff-d969-4694-a3d7-1a099f78d2c2",
+    "price": 2066890,
+  },
+  Object {
+    "address": "22236 La Follette Plaza, Carlton",
+    "id": "d1b05e4d-6106-4366-935f-f9a0be252ed1",
+    "price": 2005684,
+  },
+  Object {
+    "address": "8887 Tennessee Park, Carlton",
+    "id": "aab76fe5-6734-4650-b7ad-8a63ea3ecfe7",
+    "price": 971586,
+  },
+  Object {
+    "address": "52429 Eagan Drive, Carlton",
+    "id": "58aab40d-22aa-4da0-b3fd-4e5c661893ed",
+    "price": 2042994,
+  },
+  Object {
+    "address": "497 Rockefeller Center, Carlton",
+    "id": "e987a0a8-2dfb-405c-9fda-78b30b3df122",
+    "price": 2145234,
+  },
+  Object {
+    "address": "32 Cardinal Park, Carlton",
+    "id": "22c72ca4-febe-4bab-9aac-bf04a107dc40",
+    "price": 1790934,
+  },
+  Object {
+    "address": "9469 Morrow Circle, Carlton",
+    "id": "3adbe5f2-1077-4b8f-b977-8f95b1e0f390",
+    "price": 1732959,
+  },
+  Object {
+    "address": "9 Dovetail Avenue, Carlton",
+    "id": "f48e42e1-7c03-4133-baa9-ad6ebdc795c2",
+    "price": 2043862,
+  },
+  Object {
+    "address": "602 New Castle Lane, Carlton",
+    "id": "ffa90566-875d-4773-91c9-53558f2c89ce",
+    "price": 2432986,
+  },
+  Object {
+    "address": "0279 Tennyson Center, Carlton",
+    "id": "0bcbbb93-a3e8-436c-a04a-30eec2dcf617",
+    "price": 2099393,
+  },
+  Object {
+    "address": "045 Utah Place, Carlton",
+    "id": "8211ba2e-8252-452a-9703-046e98797686",
+    "price": 860161,
+  },
+  Object {
+    "address": "3 Village Place, Carlton",
+    "id": "0f6f73f1-30fa-4e50-8fce-3df508d84e71",
+    "price": 2239966,
+  },
+  Object {
+    "address": "9 Anniversary Way, Carlton",
+    "id": "8c587902-a1e8-4649-ac26-99a2f64e2120",
+    "price": 2217478,
+  },
+  Object {
+    "address": "60 Commercial Terrace, Carlton",
+    "id": "37357ce2-514d-42ac-8a67-679cbc85610c",
+    "price": 2185482,
+  },
+  Object {
+    "address": "1 Columbus Plaza, Carlton",
+    "id": "2e8c6111-f4e9-4b5c-b9c1-37bd41906694",
+    "price": 1046864,
+  },
+  Object {
+    "address": "18280 Ludington Drive, Carlton",
+    "id": "71d3521a-2359-4e1f-b07e-0a9cbb73e303",
+    "price": 915258,
+  },
+  Object {
+    "address": "91471 South Court, Carlton",
+    "id": "d66e471d-1f9d-439b-88aa-59f76a91c7bc",
+    "price": 2454314,
+  },
+  Object {
+    "address": "2 Dottie Avenue, Carlton",
+    "id": "b942a245-11ba-4f59-b3e9-4f866cc171ed",
+    "price": 998255,
+  },
+  Object {
+    "address": "539 Drewry Crossing, Carlton",
+    "id": "582e6736-8563-4420-b491-aded69d4d332",
+    "price": 1421582,
+  },
+  Object {
+    "address": "821 Schiller Court, Carlton",
+    "id": "e2b5cfa1-cc7f-44e2-96ba-4b396fc9e6f9",
+    "price": 1023930,
+  },
+  Object {
+    "address": "4981 Nelson Trail, Carlton",
+    "id": "d68af005-588f-45d6-838d-91cef3d6a3b4",
+    "price": 1381791,
+  },
+]
+`;
+
+exports[`mockProvider.propertiesBySuburb should return some properties for keyword South Yarra 1`] = `
+Array [
+  Object {
+    "address": "4 Crowley Center, South Yarra",
+    "id": "6520d1cd-93ef-4455-8022-b189d0a0b56f",
+    "price": 977486,
+  },
+  Object {
+    "address": "48896 Talisman Terrace, South Yarra",
+    "id": "4e817207-f4f5-4487-906a-26b012cd9cd5",
+    "price": 2407393,
+  },
+  Object {
+    "address": "5 Bobwhite Pass, South Yarra",
+    "id": "533977e2-5bb1-41f1-a21b-155b0a0da7af",
+    "price": 883619,
+  },
+  Object {
+    "address": "16768 5th Pass, South Yarra",
+    "id": "2a8eb9d3-e3da-4fc0-9b55-6b39988900df",
+    "price": 1062038,
+  },
+  Object {
+    "address": "84 Laurel Trail, South Yarra",
+    "id": "df40de72-ab32-48fa-90ff-081898edf4d3",
+    "price": 1937859,
+  },
+]
+`;
