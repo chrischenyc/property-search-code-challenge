@@ -1,6 +1,6 @@
-const { PropertiesController } = require('./controllers');
+const { PropertiesController } = require('../controllers');
 
-const resolvers = {
+const propertiesResolver = {
   Query: {
     propertiesBySuburb: async (parent, args, context, info) => {
       const { suburb } = args;
@@ -9,4 +9,6 @@ const resolvers = {
   },
 };
 
-module.exports = resolvers;
+module.exports = {
+  propertiesResolver,
+};
