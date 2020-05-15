@@ -1,5 +1,7 @@
 # REA clone
 
+[![Server CI](https://github.com/chrischenyc/rea-clone/workflows/Server%20CI/badge.svg)](https://github.com/chrischenyc/rea-clone/actions)
+
 ## Tech-stack decisions
 
 - Javascript, React, Node.js, GraphQL based on current team skills. Typescript would play nicely when it comes to GraphQL schema generation, but that's another story.
