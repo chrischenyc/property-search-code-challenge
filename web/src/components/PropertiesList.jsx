@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
  */
 function PropertiesList({ properties, renderItem }) {
   return (
-    <div>
+    <div id="properties-list">
       {properties.map((property) => {
         return renderItem(property);
       })}

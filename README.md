@@ -24,7 +24,7 @@ Typescript would play nicely when it comes to server-side GraphQL [types/resolve
   - [role-base project structure](https://hackernoon.com/three-ways-to-structure-your-graphql-code-with-apollo-server-4788beed89db), I am also open to domain-based project structure.
   - The search query is agnostic to the underlying data system (database, cache, external web service, mock JSON file), therefore, a layer of abstraction is necessary to modularise searching functions.
 
-## get started with node.js server
+## Get started with node.js server
 
 ```bash
 // start server on http://localhost:4000
@@ -37,7 +37,7 @@ yarn dev
 yarn test
 ```
 
-## get started with React web app
+## Get started with React web app
 
 ```bash
 // start server on http://localhost:3000
@@ -51,4 +51,8 @@ yarn test
 
 // run e2e tests
 yarn test:e2e
+
+// run e2e tests in chrome browser
+yarn test:e2e:chrome
+//
 ```

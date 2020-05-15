@@ -10,11 +10,11 @@ const FormSchema = Yup.object().shape({
 
 function PropertySearchForm({ onSearch }) {
   return (
-    <div>
+    <div id="property-search-form">
       <Formik initialValues={{ suburb: '' }} validationSchema={FormSchema} onSubmit={onSearch}>
         {({ isSubmitting, errors, touched }) => (
           <Form>
-            <Field type="text" name="suburb" placeholder="Carlton, South Yarra ..." />
+            <Field id="suburb" type="text" name="suburb" placeholder="Carlton, South Yarra ..." />
             <Button type="submit" disabled={isSubmitting}>
               Search
             </Button>
